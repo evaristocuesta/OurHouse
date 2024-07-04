@@ -23,7 +23,155 @@ body {
     font-family: Quicksand;
 }
 
+h1 {
+    color: #687f71;
+}
+
 .navbar-brand {
     font-size: 2.2rem;
     font-weight: 400;
+    color: #687f71 !important;
 }
+
+.image-circle {
+    border-radius: 50%;
+}
+
+.text-round {
+    border-radius: 10%;
+}
+
+.border-15 {
+    border-width: 15px;
+    border-style: solid;
+}
+
+.border-palette-light-1 {
+    border-color: #a8c0b1;
+}
+
+.border-palette-light-2 {
+    border-color: #f1f6f3;
+}
+
+/* .image-1 */
+
+.image-1 {
+    width: 628px;
+    height: 628px;
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/26c866473ef45250842f6d9d/bn.jpg");
+    background-position: 0% 50%;
+    background-size: cover;
+    margin: 60px auto 0 auto;
+}
+
+@media (max-width: 1199px) {
+    .image-1 {
+        width: 585px;
+        height: 585px;
+    }
+}
+
+@media (max-width: 991px) {
+    .image-1 {
+        width: 511px;
+        height: 511px;
+    }
+}
+
+@media (max-width: 767px) {
+    .image-1 {
+        width: 480px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 575px) {
+    .image-1 {
+        width: 329px;
+        height: 329px;
+    }
+}
+
+/* .image-2 */
+
+.image-2 {
+    width: 389px;
+    height: 389px;
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/97c20a53dde256fcae8bb1f6/gh.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    margin: -234px auto 0 80px;
+}
+
+@media (max-width: 1199px) {
+    .image-2 {
+        width: 357px;
+        height: 357px;
+        margin-top: -193px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .image-2 {
+        width: 299px;
+        height: 299px;
+        margin-top: -162px;
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 767px) {
+    .image-2 {
+        width: 267px;
+        height: 267px;
+    }
+}
+
+@media (max-width: 575px) {
+    .image-2 {
+        width: 193px;
+        height: 193px;
+        margin-top: -69px;
+        margin-left: 12px;
+    }
+}
+
+/* text-1 */
+
+.text-1 {
+    min-height: 484px;
+    width: 450px;
+    margin: -170px 0 0 auto;
+    border-radius: 8%;
+    background-color: #ffffff;
+    padding: 30px 40px 17px;
+}
+
+@media (max-width: 991px) {
+    .text-1 {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-1 {
+        padding: 22px 10px 17px;
+        margin: 40px auto;
+        width: 450px;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-1 {
+        padding: 22px 10px 17px;
+        margin: 40px auto;
+        width: 320px;
+    }
+}
+
+
+
