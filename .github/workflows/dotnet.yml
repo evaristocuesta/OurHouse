@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore ./src/OurHouse --configuration Release
     - name: Deploy
-      run: dotnet run --no-restore ./src/OurHouse --configuration Release ssg
+      run: dotnet run --no-restore --project ./src/OurHouse --configuration Release ssg
