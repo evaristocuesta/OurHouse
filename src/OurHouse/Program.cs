@@ -41,7 +41,7 @@ app.MapControllerRoute(
 
 if (args.HasExitWhenDoneArg())
 {
-    var outputPath = $"{app.Environment.ContentRootPath}/bin/web-output";
+    var outputPath = $"{app.Environment.ContentRootPath}/../../docs";
 
     if (!Path.Exists(outputPath))
     {
