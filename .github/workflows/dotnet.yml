@@ -24,8 +24,12 @@ jobs:
       run: dotnet restore ./src/OurHouse
     - name: Build
       run: dotnet build --no-restore ./src/OurHouse --configuration Release
-    - name: Deploy
+    - name: Generate pages
       run: dotnet run --no-restore --project ./src/OurHouse --configuration Release ssg
+    - name: Git
+      run: |
+       cd web
+       ls
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
