@@ -31,7 +31,7 @@ jobs:
        cd web
        ls
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.6.1
+      uses: JamesIves/github-pages-deploy-action@v4.6.1
       with:
         branch: gh-pages
         folder: web
