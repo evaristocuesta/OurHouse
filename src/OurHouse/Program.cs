@@ -30,7 +30,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(basePath);
 
 app.UsePathBase(basePath);
 app.UseRouting();
