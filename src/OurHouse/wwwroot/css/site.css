@@ -92,7 +92,7 @@ h1 {
     width: 628px;
     height: 628px;
     background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/26c866473ef45250842f6d9d/bn.jpg");
-    background-position: 0% 50%;
+    background-position: 50% 50%;
     background-size: cover;
     margin: 60px auto 0 auto;
 }
@@ -175,7 +175,7 @@ h1 {
 .image-3 {
     width: 200px;
     height: 200px;
-    margin: -334px auto 0 970px;
+    margin: -334px 120px 0 auto;
 }
 
 @media (max-width: 1399px) {
@@ -183,7 +183,7 @@ h1 {
         width: 200px;
         height: 200px;
         margin-top: -193px;
-        margin-left: 800px;
+        margin-right: 130px;
     }
 }
 
@@ -192,7 +192,7 @@ h1 {
         width: 200px;
         height: 200px;
         margin-top: -193px;
-        margin-left: 620px;
+        margin-right: 140px;
     }
 }
 
@@ -201,7 +201,7 @@ h1 {
         width: 180px;
         height: 180px;
         margin-top: -162px;
-        margin-left: 430px;
+        margin-right: 80px;
     }
 }
 
@@ -210,7 +210,7 @@ h1 {
         width: 150px;
         height: 150px;
         margin-top: -142px;
-        margin-left: 380px;
+        margin-right: 10px;
     }
 }
 
@@ -219,7 +219,7 @@ h1 {
         width: 100px;
         height: 100px;
         margin-top: -90px;
-        margin-left: 220px;
+        margin-right: 30px;
     }
 
     .border-35 {
