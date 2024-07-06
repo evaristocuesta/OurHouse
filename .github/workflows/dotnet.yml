@@ -25,7 +25,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore ./src/OurHouse --configuration Release
     - name: Generate pages
-      run: dotnet run --no-restore --project ./src/OurHouse --configuration Release ssg
+      run: dotnet run --no-restore --project ./src/OurHouse --configuration Release ssg OurHouse
     - name: List files to deploy
       run: |
        cd web
