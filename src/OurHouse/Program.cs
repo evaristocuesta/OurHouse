@@ -75,6 +75,12 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "home",
+    pattern: "{lang=en}/",
+    defaults: new { controller = "Home", action = "Index" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
     name: "ourHouse",
     pattern: "{lang=en}/ourhouse",
     defaults: new { controller = "Home", action = "OurHouse"},

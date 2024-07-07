@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar bg-body-tertiary navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="~/">casa espejo</a>
+                <a class="navbar-brand" href="@Url.RouteUrl("home", new {lang = ViewContext.RouteData.Values["lang"]})">casa espejo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,7 +32,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link text-dark active" asp-area="" asp-controller="Home" asp-action="Index" aria-current="page">@Localizer["Home"]</a>
+                                <a class="nav-link text-dark" href="@Url.RouteUrl("home", new {lang = ViewContext.RouteData.Values["lang"]})">@Localizer["Home"]</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="@Url.RouteUrl("ourHouse", new {lang = ViewContext.RouteData.Values["lang"]})">@Localizer["Our house"]</a>
@@ -62,7 +62,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Casa Espejo - <a asp-area="" asp-controller="Home" asp-action="OurHouse">@Localizer["Our house"]</a>
+            &copy; 2024 - casa espejo - <a href="@Url.RouteUrl("ourHouse", new {lang = ViewContext.RouteData.Values["lang"]})">@Localizer["Our house"]</a>
         </div>
     </footer>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

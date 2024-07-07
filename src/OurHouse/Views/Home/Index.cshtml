@@ -13,6 +13,6 @@
 <div class="text-1 text-center">
     <h1>@Localizer["Welcome"]</h1>
     <p class="text-margin">@Localizer["Welcome message"]</p>
-    <a asp-area="" asp-controller="Home" asp-action="OurHouse" class="custom-buttom">@Localizer["Our house"]</a>
+    <a href="@Url.RouteUrl("ourHouse", new {lang = ViewContext.RouteData.Values["lang"]})" class="custom-buttom">@Localizer["Our house"]</a>
 </div>
 
