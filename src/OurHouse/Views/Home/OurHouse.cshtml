@@ -1,7 +1,11 @@
-﻿@{
-    ViewData["Title"] = "Our House";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = @Localizer["Our house"];
 }
 <div class="text-center">
-    <h1 class="display-4">@ViewData["Title"]</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu sem vehicula efficitur. Sed non molestie dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis auctor augue et tincidunt sagittis. Nullam quis tortor rhoncus, consectetur quam mattis, ultrices risus. Sed faucibus libero sit amet mollis pellentesque. Etiam dignissim justo ut dictum eleifend. Nam nec nisl mi. Integer tempus quam a nulla cursus vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna consectetur, varius turpis nec, egestas libero. Aenean nec efficitur enim, sed lacinia enim. Nulla at ante tortor. Proin malesuada nisl a est finibus ullamcorper. Nullam nec odio quis nulla pretium fermentum eget in nisl.</p>
+    <h1 class="display-4">@Localizer["Our house"]</h1>
+    <p>@Localizer["Our house message"]</p>
 </div>

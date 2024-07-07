@@ -1,5 +1,9 @@
-﻿@{
-    ViewData["Title"] = "Home";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Home"];
 }
 
 <div class="image-circle image-1 border-15 border-palette-light-1"></div>
@@ -7,8 +11,8 @@
 <div class="image-circle image-3 border-35 border-palette-dark-1"></div>
 
 <div class="text-1 text-center">
-    <h1>Welcome</h1>
-    <p class="text-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales turpis porta, varius libero a, dapibus metus. Maecenas porta feugiat eros malesuada hendrerit. Praesent at libero sed nisi efficitur accumsan a sit amet leo. Vivamus et euismod sapien, semper mollis eros. In leo ante, dictum id nibh sed, lobortis ultricies neque. Donec ac volutpat urna. Fusce id ullamcorper justo, at facilisis felis. Sed at feugiat neque. Pellentesque tempor hendrerit vestibulum.</p>
-    <a asp-area="" asp-controller="Home" asp-action="OurHouse" class="custom-buttom">Our House</a>
+    <h1>@Localizer["Welcome"]</h1>
+    <p class="text-margin">@Localizer["Welcome message"]</p>
+    <a asp-area="" asp-controller="Home" asp-action="OurHouse" class="custom-buttom">@Localizer["Our house"]</a>
 </div>
 

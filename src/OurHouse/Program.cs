@@ -1,9 +1,43 @@
 using AspNetStatic;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Localization.Routing;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using OurHouse;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var supportedCultures = new[]
+{
+    new CultureInfo("en"),
+    new CultureInfo("es"),
+};
+
+var options = new RequestLocalizationOptions()
+{
+    DefaultRequestCulture = new RequestCulture(culture: "en", uiCulture: "en"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+};
+
+options.RequestCultureProviders =
+[
+    new RouteDataRequestCultureProvider() { Options = options, RouteDataStringKey = "lang" }
+];
+
+builder.Services.AddSingleton(options);
+
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+builder.Services.AddMvc(opts =>
+{
+    opts.Filters.Add(new MiddlewareFilterAttribute(typeof(LocalizationPipeline)));
+})
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
 
 var basePath = args.Length == 2 ? $"/{args[1]}" : string.Empty;
 
@@ -39,7 +73,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{lang=en}/{controller=Home}/{action=Index}/{id?}",
+    constraints: new { lang = @"(\w{2})" });
 
 
 if (args.HasExitWhenDoneArg())
