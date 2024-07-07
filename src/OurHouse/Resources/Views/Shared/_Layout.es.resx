@@ -120,6 +120,9 @@
   <data name="Home" xml:space="preserve">
     <value>Inicio</value>
   </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Idiomas</value>
+  </data>
   <data name="Our house" xml:space="preserve">
     <value>Nuestra casa</value>
   </data>

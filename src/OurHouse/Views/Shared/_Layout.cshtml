@@ -35,9 +35,20 @@
                                 <a class="nav-link text-dark active" asp-area="" asp-controller="Home" asp-action="Index" aria-current="page">@Localizer["Home"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OurHouse" aria-current="page">@Localizer["Our house"]</a>
+                                <a class="nav-link text-dark" href="@Url.RouteUrl("ourHouse", new {lang = ViewContext.RouteData.Values["lang"]})">@Localizer["Our house"]</a>
                             </li>
                         </ul>
+                        <hr />
+                        <div>@Localizer["Languages"]: 
+                            <a class="text-dark"
+                               href="@Url.RouteUrl(new  {lang = "es" })">
+                               Español
+                            </a> -
+                            <a class="text-dark"
+                               href="@Url.RouteUrl(new  {lang = "en" })">
+                                English
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -47,8 +47,8 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/"),
       new PageResource($"{basePath}/es"),
       new PageResource($"{basePath}/en"),
-      new PageResource($"{basePath}/es/home/OurHouse"),
-      new PageResource($"{basePath}/en/home/OurHouse"),
+      new PageResource($"{basePath}/es/ourhouse"),
+      new PageResource($"{basePath}/en/ourhouse"),
       new CssResource($"{basePath}/lib/bootstrap/dist/css/bootstrap.min.css") { OptimizerType = OptimizerType.None },
       new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
       new CssResource($"{basePath}/OurHouse.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
@@ -73,6 +73,12 @@ app.UsePathBase(basePath);
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "ourHouse",
+    pattern: "{lang=en}/ourhouse",
+    defaults: new { controller = "Home", action = "OurHouse"},
+    constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "default",
