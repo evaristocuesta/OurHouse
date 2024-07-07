@@ -44,6 +44,7 @@ var basePath = args.Length == 2 ? $"/{args[1]}" : string.Empty;
 builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
   new StaticResourcesInfoProvider(
     [
+      new PageResource($"{basePath}/"),
       new PageResource($"{basePath}/es"),
       new PageResource($"{basePath}/en"),
       new PageResource($"{basePath}/es/home/OurHouse"),
