@@ -118,7 +118,8 @@ if (args.HasExitWhenDoneArg())
 
     app.GenerateStaticContent(outputPath,
         alwaysDefaultFile: true,
-        exitWhenDone: true);
+        exitWhenDone: true, 
+        dontUpdateLinks: true);
 }
 
 await app.RunAsync();
