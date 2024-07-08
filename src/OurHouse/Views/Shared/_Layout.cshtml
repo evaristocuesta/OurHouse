@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
 @using System.Globalization
+@using OurHouse.Extensions
 
 @inject IViewLocalizer Localizer
 
@@ -20,7 +21,7 @@
     <header>
         <nav class="navbar bg-body-tertiary navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="@Url.RouteUrl("home", new {lang = ViewContext.RouteData.Values["lang"]})">casa espejo</a>
+                <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">casa espejo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,21 +33,21 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="@Url.RouteUrl("home", new {lang = ViewContext.RouteData.Values["lang"]})">@Localizer["Home"]</a>
+                                <a class="nav-link text-dark" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Home"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="@Url.RouteUrl("ourHouse", new {lang = ViewContext.RouteData.Values["lang"]})">@Localizer["Our house"]</a>
+                                <a class="nav-link text-dark" href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Our house"]</a>
                             </li>
                         </ul>
                         <hr />
                         <div>@Localizer["Languages"]: 
                             <a class="text-dark"
-                               href="@Url.RouteUrl(new  {lang = "es" })">
+                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
                                Español
                             </a> -
                             <a class="text-dark"
-                               href="@Url.RouteUrl(new  {lang = "en" })">
-                                English
+                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
+                               English
                             </a>
                         </div>
                     </div>
@@ -62,7 +63,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - casa espejo - <a href="@Url.RouteUrl("ourHouse", new {lang = ViewContext.RouteData.Values["lang"]})">@Localizer["Our house"]</a>
+            &copy; 2024 - casa espejo - <a href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Our house"]</a>
         </div>
     </footer>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

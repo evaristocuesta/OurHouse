@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
-using OurHouse;
+using OurHouse.Pipelines;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -47,7 +47,7 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/"),
       new PageResource($"{basePath}/es"),
       new PageResource($"{basePath}/en"),
-      new PageResource($"{basePath}/es/ourhouse"),
+      new PageResource($"{basePath}/es/nuestracasa"),
       new PageResource($"{basePath}/en/ourhouse"),
       new CssResource($"{basePath}/lib/bootstrap/dist/css/bootstrap.min.css") { OptimizerType = OptimizerType.None },
       new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
@@ -75,15 +75,27 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "home",
-    pattern: "{lang=en}/",
-    defaults: new { controller = "Home", action = "Index" },
+    name: "Index-en",
+    pattern: "en",
+    defaults: new { lang = "en", controller = "Home", action = "Index" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "ourHouse",
+    name: "Index-es",
+    pattern: "es",
+    defaults: new { lang = "es", controller = "Home", action = "Index" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "OurHouse-en",
     pattern: "{lang=en}/ourhouse",
-    defaults: new { controller = "Home", action = "OurHouse"},
+    defaults: new { lang = "en", controller = "Home", action = "OurHouse"},
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "OurHouse-es",
+    pattern: "{lang=es}/nuestracasa",
+    defaults: new { lang = "es", controller = "Home", action = "OurHouse" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(

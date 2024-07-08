@@ -1,4 +1,4 @@
-﻿namespace OurHouse;
+﻿namespace OurHouse.Pipelines;
 
 public class LocalizationPipeline
 {
