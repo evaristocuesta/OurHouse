@@ -30,15 +30,6 @@ jobs:
       run: |
        cd web
        ls
-    - name: HTML Validator
-      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-      continue-on-error: true
-      with:
-        root: web/OurHouse
-    - uses: actions/upload-artifact@v3
-      with:
-        name: log
-        path: log.log        
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.6.1
       with:
