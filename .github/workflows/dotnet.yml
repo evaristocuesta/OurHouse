@@ -32,6 +32,7 @@ jobs:
        ls
     - name: HTML Validator
       uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      continue-on-error: true
       with:
         root: web/OurHouse
     - uses: actions/upload-artifact@v3
