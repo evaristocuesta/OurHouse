@@ -30,6 +30,10 @@ jobs:
       run: |
        cd web
        ls
+    - name: HTML and CSS validator
+      uses: anishathalye/proof-html@v2
+      with:
+        directory: web/OurHouse
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.6.1
       with:
