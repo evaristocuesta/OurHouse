@@ -13,7 +13,7 @@ public class WelcomeTests : PageTest
         await Page.GotoAsync("https://evaristocuesta.github.io/OurHouse");
 
         // Expect a title "to contain" a substring.
-        await Expect(Page).ToHaveTitleAsync(new Regex("Home - Casa Espejo"));
+        await Expect(Page).ToHaveTitleAsync(new Regex("Welcome - Casa Espejo"));
     }
 
     [Test]
@@ -22,6 +22,6 @@ public class WelcomeTests : PageTest
         await Page.GotoAsync("https://evaristocuesta.github.io/OurHouse/es");
 
         // Expect a title "to contain" a substring.
-        await Expect(Page).ToHaveTitleAsync(new Regex("Inicio - Casa Espejo"));
+        await Expect(Page).ToHaveTitleAsync(new Regex("Bienvenido - Casa Espejo"));
     }
 }
