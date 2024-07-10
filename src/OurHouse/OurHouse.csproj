@@ -10,4 +10,8 @@
     <PackageReference Include="AspNetStatic" Version="0.21.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
 </Project>
