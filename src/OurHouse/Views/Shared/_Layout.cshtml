@@ -41,11 +41,13 @@
                         </ul>
                         <hr />
                         <div>@Localizer["Languages"]: 
-                            <a class="text-dark"
+                            <a data-testid="lang-es"
+                               class="text-dark"
                                href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
                                Español
                             </a> -
-                            <a class="text-dark"
+                            <a data-testid="lang-en"
+                               class="text-dark"
                                href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
                                English
                             </a>
