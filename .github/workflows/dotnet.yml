@@ -21,15 +21,19 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ./src/OurHouse
+      run: dotnet restore
+      working-directory: ./src/OurHouse
     - name: Build
-      run: dotnet build --no-restore ./src/OurHouse --configuration Release
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./src/OurHouse
     - name: Generate pages
-      run: dotnet run --no-restore --project ./src/OurHouse --configuration Release ssg OurHouse
+      run: dotnet run --no-restore --configuration Release ssg OurHouse
+      working-directory: ./src/OurHouse
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.6.1
       with:
         branch: gh-pages
         folder: web/OurHouse
     - name: Test
-      run: dotnet test --no-build --verbosity normal --project ./tests/OurHouse.Tests --configuration Release --settings gh-pages.runsettings
+      run: dotnet test --verbosity normal --configuration Release --settings gh-pages.runsettings
+      working-directory: ./tests/OurHouse.Tests
