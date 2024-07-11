@@ -31,9 +31,12 @@ jobs:
       working-directory: ./src/OurHouse
     - name: List files to deploy
       run: |
+       pwd
        cd web
+       pwd
        ls
        cd OurHouse
+       pwd
        ls
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.6.1
