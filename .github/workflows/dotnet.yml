@@ -34,6 +34,12 @@ jobs:
       with:
         branch: gh-pages
         folder: web/OurHouse
-    - name: Test
+    - name: Build Tests
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./tests/OurHouse.Tests
+    - name: Ensure browsers are installed
+      run: pwsh bin/Release/net8.0/playwright.ps1 install --with-deps
+      working-directory: ./tests/OurHouse.Tests
+    - name: Tests
       run: dotnet test --verbosity normal --configuration Release --settings gh-pages.runsettings
       working-directory: ./tests/OurHouse.Tests
