@@ -31,3 +31,5 @@ jobs:
       with:
         branch: gh-pages
         folder: web/OurHouse
+    - name: Test
+      run: dotnet test --no-build --verbosity normal --project ./tests/OurHouse.Tests --configuration Release --settings gh-pages.runsettings
