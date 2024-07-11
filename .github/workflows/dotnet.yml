@@ -34,6 +34,9 @@ jobs:
       with:
         branch: gh-pages
         folder: web/OurHouse
+    - name: Restore tests dependencies
+      run: dotnet restore
+      working-directory: ./tests/OurHouse.Tests
     - name: Build Tests
       run: dotnet build --no-restore --configuration Release
       working-directory: ./tests/OurHouse.Tests
