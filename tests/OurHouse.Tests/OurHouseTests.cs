@@ -24,11 +24,11 @@ public class OurHouseTests : PageTest
     }
 
     [Test]
-    [TestCase("", "es", "lang-es")]
-    [TestCase("en", "es", "lang-es")]
-    [TestCase("es", "en", "lang-en")]
-    [TestCase("en/ourhouse", "es/nuestracasa", "lang-es")]
-    [TestCase("es/nuestracasa", "en/ourhouse", "lang-en")]
+    [TestCase("", "es/", "lang-es")]
+    [TestCase("en", "es/", "lang-es")]
+    [TestCase("es", "en/", "lang-en")]
+    [TestCase("en/ourhouse", "es/nuestracasa/", "lang-es")]
+    [TestCase("es/nuestracasa", "en/ourhouse/", "lang-en")]
     public async Task ChangesToLangAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
