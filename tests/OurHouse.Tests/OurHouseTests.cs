@@ -7,6 +7,8 @@ namespace OurHouse.Tests;
 [TestFixture]
 public class OurHouseTests : PageTest
 {
+    private string _baseUrl = string.Empty;
+
     [Test]
     [TestCase("", "Welcome - Casa Espejo")]
     [TestCase("en", "Welcome - Casa Espejo")]
@@ -22,27 +24,29 @@ public class OurHouseTests : PageTest
     }
 
     [Test]
-    [TestCase("", "es", "lang-es")]
-    [TestCase("en", "es", "lang-es")]
-    [TestCase("es", "en", "lang-en")]
-    [TestCase("en/ourhouse", "es/nuestracasa", "lang-es")]
-    [TestCase("es/nuestracasa", "en/ourhouse", "lang-en")]
+    [TestCase("", "es/", "Español")]
+    [TestCase("en", "es/", "Español")]
+    [TestCase("es", "en/", "English")]
+    [TestCase("en/ourhouse", "es/nuestracasa/", "Español")]
+    [TestCase("es/nuestracasa", "en/ourhouse/", "English")]
     public async Task ChangesToLangAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
 
-        var link = Page.Locator($"id={lang}");
-        await link.ClickAsync();
+        await Page.GetByLabel("Toggle navigation").ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = lang }).ClickAsync();
 
-        // Expect a title 
-        await Expect(Page).ToHaveURLAsync(target);
+        // Expect a url
+        await Expect(Page).ToHaveURLAsync($"{_baseUrl}{target}");
     }
 
     public override BrowserNewContextOptions ContextOptions()
     {
+        _baseUrl = TestContext.Parameters["BaseUrl"] ?? string.Empty;
+
         return new BrowserNewContextOptions()
         {
-            BaseURL = TestContext.Parameters["BaseUrl"]         
+            BaseURL = _baseUrl        
         };
     }
 }
