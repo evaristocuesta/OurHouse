@@ -24,17 +24,17 @@ public class OurHouseTests : PageTest
     }
 
     [Test]
-    [TestCase("", "es/", "Español")]
-    [TestCase("en", "es/", "Español")]
-    [TestCase("es", "en/", "English")]
-    [TestCase("en/ourhouse", "es/nuestracasa/", "Español")]
-    [TestCase("es/nuestracasa", "en/ourhouse/", "English")]
+    [TestCase("", "es", "lang-es")]
+    [TestCase("en", "es", "lang-es")]
+    [TestCase("es", "en", "lang-en")]
+    [TestCase("en/ourhouse", "es/nuestracasa", "lang-es")]
+    [TestCase("es/nuestracasa", "en/ourhouse", "lang-en")]
     public async Task ChangesToLangAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
 
         await Page.GetByLabel("Toggle navigation").ClickAsync();
-        await Page.GetByRole(AriaRole.Link, new() { Name = lang }).ClickAsync();
+        await Page.Locator($"id={lang}").ClickAsync();
 
         // Expect a url
         await Expect(Page).ToHaveURLAsync($"{_baseUrl}{target}");
