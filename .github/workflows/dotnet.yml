@@ -26,9 +26,14 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
       working-directory: ./src/OurHouse
-    - name: Run web for testing 
-      run: dotnet run --no-restore --configuration Release
+    - name: Generate pages
+      run: dotnet run --no-restore --configuration Release ssg OurHouse ../../web
       working-directory: ./src/OurHouse
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4.6.1
+      with:
+        branch: gh-pages
+        folder: web/OurHouse
     - name: Restore tests dependencies
       run: dotnet restore
       working-directory: ./tests/OurHouse.Tests
@@ -41,11 +46,3 @@ jobs:
     - name: Tests
       run: dotnet test --verbosity normal --configuration Release --settings gh-pages.runsettings
       working-directory: ./tests/OurHouse.Tests
-    - name: Generate pages
-      run: dotnet run --no-restore --configuration Release ssg OurHouse ../../web
-      working-directory: ./src/OurHouse
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4.6.1
-      with:
-        branch: gh-pages
-        folder: web/OurHouse
