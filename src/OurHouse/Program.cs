@@ -39,8 +39,8 @@ builder.Services.AddMvc(opts =>
 })
     .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
 
-var basePath = args.Length == 3 ? $"/{args[1]}" : string.Empty;
-var outputPath = args.Length == 3 ? $"{args[2]}" : string.Empty;
+var outputPath = args.Length >= 2 ? $"{args[1]}" : string.Empty;
+var basePath = args.Length == 3 ? $"/{args[2]}" : string.Empty;
 
 builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
   new StaticResourcesInfoProvider(

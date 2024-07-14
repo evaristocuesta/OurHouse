@@ -1,7 +1,4 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
+name: Deploy
 
 on:
   push:
@@ -45,7 +42,7 @@ jobs:
       run: dotnet build --no-restore --configuration Release
       working-directory: ./src/OurHouse
     - name: Generate pages
-      run: dotnet run --no-restore --configuration Release ssg OurHouse ../../web
+      run: dotnet run --no-restore --configuration Release ssg ../../web OurHouse
       working-directory: ./src/OurHouse
 
     - name: Setup Pages
