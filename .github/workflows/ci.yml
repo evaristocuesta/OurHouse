@@ -32,7 +32,7 @@ jobs:
     - name: Serve Files
       uses: Eun/http-server-action@v1
       with:
-        directory: "web/OurHouse"
+        directory: "web"
         port: 8080
         no-cache: false
         index-files: |

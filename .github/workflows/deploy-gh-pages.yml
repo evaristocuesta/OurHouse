@@ -42,7 +42,7 @@ jobs:
       run: dotnet build --no-restore --configuration Release
       working-directory: ./src/OurHouse
     - name: Generate pages
-      run: dotnet run --no-restore --configuration Release ssg OurHouse ../../web
+      run: dotnet run --no-restore --configuration Release ssg ../../web OurHouse
       working-directory: ./src/OurHouse
 
     - name: Setup Pages
