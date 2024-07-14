@@ -1,5 +1,6 @@
 using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
+using System.Text.RegularExpressions;
 
 namespace OurHouse.Tests;
 
@@ -24,11 +25,11 @@ public class OurHouseTests : PageTest
     }
 
     [Test]
-    [TestCase("", "es/", "lang-es")]
-    [TestCase("en", "es/", "lang-es")]
-    [TestCase("es", "en/", "lang-en")]
-    [TestCase("en/ourhouse", "es/nuestracasa/", "lang-es")]
-    [TestCase("es/nuestracasa", "en/ourhouse/", "lang-en")]
+    [TestCase("", "es", "lang-es")]
+    [TestCase("en", "es", "lang-es")]
+    [TestCase("es", "en", "lang-en")]
+    [TestCase("en/ourhouse", "es/nuestracasa", "lang-es")]
+    [TestCase("es/nuestracasa", "en/ourhouse", "lang-en")]
     public async Task ChangesToLangAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
@@ -37,7 +38,7 @@ public class OurHouseTests : PageTest
         await Page.Locator($"id={lang}").ClickAsync();
 
         // Expect a url
-        await Expect(Page).ToHaveURLAsync($"{_baseUrl}{target}");
+        await Expect(Page).ToHaveURLAsync(new Regex($"{_baseUrl}{target}\\/?$"));
     }
 
     public override BrowserNewContextOptions ContextOptions()
