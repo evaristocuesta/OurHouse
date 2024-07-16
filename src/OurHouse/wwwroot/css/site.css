@@ -232,7 +232,7 @@ h1 {
 
 .text-1 {
     min-height: 484px;
-    width: 450px;
+    width: 420px;
     margin: 20px 0 0 auto;
     border-radius: 30px;
     background-color: #ffffff;
@@ -241,6 +241,7 @@ h1 {
 
 @media (max-width: 991px) {
     .text-1 {
+        min-height: 440px;
         padding-left: 30px;
         padding-right: 30px;
         width: 450px;
@@ -249,6 +250,7 @@ h1 {
 
 @media (max-width: 767px) {
     .text-1 {
+        min-height: 430px;
         padding: 22px 25px 17px;
         margin: 40px auto;
         width: 450px;
@@ -257,6 +259,7 @@ h1 {
 
 @media (max-width: 575px) {
     .text-1 {
+        min-height: 520px;
         padding: 22px 20px 17px;
         margin: 40px auto;
         width: 320px;
