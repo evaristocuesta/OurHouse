@@ -266,5 +266,40 @@ h1 {
     }
 }
 
+/* text-2 */
 
+.text-2 {
+    min-height: 284px;
+    width: 800px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 30px 40px 17px;
+}
 
+@media (max-width: 991px) {
+    .text-2 {
+        min-height: 440px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-2 {
+        min-height: 430px;
+        padding: 22px 25px 17px;
+        margin: 40px auto;
+        width: 450px;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-2 {
+        min-height: 520px;
+        padding: 22px 20px 17px;
+        margin: 40px auto;
+        width: 320px;
+    }
+}
