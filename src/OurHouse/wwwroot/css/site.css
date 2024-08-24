@@ -23,7 +23,21 @@ body {
     font-family: Quicksand;
 }
 
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #687f71;
+}
+
+a:hover {
+    color: #a8c0b1;
+}
+
 h1 {
+    color: #687f71;
+}
+
+h5 {
     color: #687f71;
 }
 
