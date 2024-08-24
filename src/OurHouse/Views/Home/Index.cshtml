@@ -7,13 +7,15 @@
     ViewData["Title"] = Localizer["Welcome"];
 }
 
-<div class="image-circle image-1 border-15 border-palette-light-1"></div>
-<div class="image-circle image-2 border-15 border-palette-light-2"></div>
-<div class="image-circle image-3 border-35 border-palette-dark-1"></div>
+<div class="container pb-3">
+    <div class="image-circle image-1 border-15 border-palette-light-1"></div>
+    <div class="image-circle image-2 border-15 border-palette-light-2"></div>
+    <div class="image-circle image-3 border-35 border-palette-dark-1"></div>
 
-<div class="text-1 text-center">
-    <h1>@Localizer["Welcome"]</h1>
-    <p class="text-margin">@Localizer["Welcome message"]</p>
-    <a href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())" class="custom-buttom">@Localizer["Our house"]</a>
+    <div class="text-1 text-center">
+        <h1>@Localizer["Welcome"]</h1>
+        <p class="text-margin">@Localizer["Welcome message"]</p>
+        <a href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())" class="custom-buttom">@Localizer["Our house"]</a>
+    </div>
 </div>
 
