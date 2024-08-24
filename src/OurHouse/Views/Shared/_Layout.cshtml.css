@@ -1,12 +1,8 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px;
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 .nav-link {
@@ -16,4 +12,36 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .nav-link:hover {
     color: #a8c0b1;
+}
+
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #687f71 !important;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #687f71;
+}
+
+a:hover {
+    color: #a8c0b1;
+}
+
+h1 {
+    color: #687f71;
+}
+
+h5 {
+    color: #687f71;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
 }
