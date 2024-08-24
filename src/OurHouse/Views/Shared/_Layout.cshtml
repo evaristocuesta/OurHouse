@@ -33,21 +33,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Home"]</a>
+                                <a class="nav-link" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Home"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Our house"]</a>
+                                <a class="nav-link" href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Our house"]</a>
                             </li>
                         </ul>
                         <hr />
                         <div>@Localizer["Languages"]: 
                             <a id="lang-es"
-                               class="text-dark"
                                href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
                                Español
                             </a> -
                             <a id="lang-en"
-                               class="text-dark"
                                href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
                                English
                             </a>
