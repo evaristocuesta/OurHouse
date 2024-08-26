@@ -39,7 +39,6 @@
     .text-2 {
         min-height: 430px;
         padding: 22px 25px 17px;
-        margin: 40px auto;
         width: 450px;
     }
 }
@@ -48,7 +47,6 @@
     .text-2 {
         min-height: 520px;
         padding: 22px 20px 17px;
-        margin: 40px auto;
         width: 320px;
     }
 }
