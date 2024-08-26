@@ -30,14 +30,6 @@ a:hover {
     color: var(--color-palette-light-1);
 }
 
-h1 {
-    color: var(--color-palette-dark-1);
-}
-
-h5 {
-    color: var(--color-palette-dark-1);
-}
-
 .footer {
     position: absolute;
     bottom: 0;

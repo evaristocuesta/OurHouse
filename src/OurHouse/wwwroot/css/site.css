@@ -25,6 +25,14 @@ body {
     font-family: Quicksand;
 }
 
+h1 {
+    color: var(--color-palette-dark-1);
+}
+
+h5 {
+    color: var(--color-palette-dark-1);
+}
+
 .image-circle {
     border-radius: 50%;
 }
