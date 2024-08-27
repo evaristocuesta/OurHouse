@@ -7,7 +7,7 @@
 .text-2 {
     min-height: 284px;
     width: 800px;
-    margin: 30px auto 80px;
+    margin: 30px auto 120px;
     border-radius: 30px;
     background-color: var(--color-text-background);
     padding: 30px 40px 17px;
@@ -38,8 +38,9 @@
 
 @media (max-width: 767px) {
     .text-2 {
-        min-height: 430px;
-        padding: 22px 25px 17px;
+        min-height: 400px;
+        margin-bottom: 170px;
+        padding: 22px 25px 10px;
         width: 450px;
     }
 }
@@ -47,6 +48,7 @@
 @media (max-width: 575px) {
     .text-2 {
         min-height: 520px;
+        margin-bottom: 260px;
         padding: 22px 20px 17px;
         width: 320px;
     }

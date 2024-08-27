@@ -86,6 +86,32 @@ h5 {
     color: var(--color-text-button);
 }
 
+.social-icons {
+    text-align: center;
+}
+
+a.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--color-palette-dark-1);
+    color: var(--color-text-button);
+    border-radius: 100%;
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+}
+
+.social-icon:last-child {
+    margin-right: 0;
+}
+
+a.social-icon:hover {
+    background-color: var(--color-text-button);
+    color: var(--color-palette-dark-1);
+}
+
 @media (max-width: 575px) {
      .border-35 {
         border-width: 25px;
