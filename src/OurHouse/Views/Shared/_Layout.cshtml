@@ -65,28 +65,42 @@
     <footer class="border-top footer text-muted">
         <div class="container text-center">
             <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <p><a href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo &copy; 2024</a></p>
+                <div class="footer-top col-sm-12">
+                    <p class="logo">
+                        <a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
+                            <i class="fas fa-paw"></i>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="footer-left col-sm-12 col-md-4">
+                    <p><a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo</a></p>
                     <p>Calle España nº 10</p>
                     <p>21208 Cortelazor, Huelva</p>
                 </div>
 
-                <div class="col-sm-6 col-md-4">
-                    <p><a href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo &copy; 2024</a></p>
-                    <p>Calle España nº 10</p>
-                    <p>21208 Cortelazor, Huelva</p>
+                <div class="footer-center col-sm-12 col-md-4">
+                    <p class="logo">
+                        <a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
+                            <i class="fas fa-paw"></i>
+                        </a>
+                    </p>
+                    <p><a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo &copy; 2024</a></p>
                 </div>
 
-                <div class="col-sm-12 col-md-4">
-                    <p>
-                        <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Linkedin Evaristo Cuesta" target="_blank">
+                <div class="footer-right col-sm-12 col-md-4">
+                    <p class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Instagram Casa Espejo" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Linkedin Evaristo Cuesta" target="_blank">
+                        <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Facebook Casa Espejo" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Linkedin Evaristo Cuesta" target="_blank">
+                        <a class="social-icon" href="mailto:correo@correo.com" title="Email Casa Espejo">
                             <i class="far fa-envelope"></i>
+                        </a>
+                        <a class="social-icon" href="tel:+34 666 66 66 66" title="Phone Casa Espejo">
+                            <i class="fas fa-phone"></i>
                         </a>
                     </p>
                     <p>@Localizer["Developed by"] <a href="https://www.evaristocuesta.com" target="_blank">Evaristo Cuesta</a></p>

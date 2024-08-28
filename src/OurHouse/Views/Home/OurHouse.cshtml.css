@@ -39,7 +39,7 @@
 @media (max-width: 767px) {
     .text-2 {
         min-height: 400px;
-        margin-bottom: 170px;
+        margin-bottom: 223px;
         padding: 22px 25px 10px;
         width: 450px;
     }
@@ -48,7 +48,7 @@
 @media (max-width: 575px) {
     .text-2 {
         min-height: 520px;
-        margin-bottom: 260px;
+        margin-bottom: 240px;
         padding: 22px 20px 17px;
         width: 320px;
     }
