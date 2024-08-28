@@ -140,7 +140,7 @@
 .text-1 {
     min-height: 484px;
     width: 420px;
-    margin: 20px 0 0 auto;
+    margin: 20px 0 40px auto;
     border-radius: 30px;
     background-color: var(--color-text-background);
     padding: 30px 40px 17px;
@@ -159,7 +159,7 @@
     .text-1 {
         min-height: 430px;
         padding: 22px 25px 17px;
-        margin: 40px auto;
+        margin: 40px auto 160px;
         width: 450px;
     }
 }
@@ -168,7 +168,7 @@
     .text-1 {
         min-height: 520px;
         padding: 22px 20px 17px;
-        margin: 40px auto;
+        margin: 40px auto 180px;
         width: 320px;
     }
 }
