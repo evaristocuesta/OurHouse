@@ -32,7 +32,7 @@ public class OurHouseTests : PageTest
     [TestCase("es", "en", "lang-en")]
     [TestCase("en/ourhouse", "es/nuestracasa", "lang-es")]
     [TestCase("es/nuestracasa", "en/ourhouse", "lang-en")]
-    [TestCase("en/contact", "es/contact", "lang-es")]
+    [TestCase("en/contact", "es/contacto", "lang-es")]
     [TestCase("es/contacto", "en/contact", "lang-en")]
     public async Task ChangesToLangAsync(string origin, string target, string lang)
     {
