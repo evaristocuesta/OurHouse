@@ -120,19 +120,4 @@
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
-  <data name="Developed by" xml:space="preserve">
-    <value>Developed by</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="Languages" xml:space="preserve">
-    <value>Languages</value>
-  </data>
-  <data name="Our house" xml:space="preserve">
-    <value>Our house</value>
-  </data>
-  <data name="Phone" xml:space="preserve">
-    <value>Phone</value>
-  </data>
 </root>

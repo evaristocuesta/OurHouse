@@ -16,6 +16,8 @@ public class OurHouseTests : PageTest
     [TestCase("es", "Bienvenido - Casa Espejo")]
     [TestCase("en/ourhouse", "Our house - Casa Espejo")]
     [TestCase("es/nuestracasa", "Nuestra casa - Casa Espejo")]
+    [TestCase("en/contact", "Contact - Casa Espejo")]
+    [TestCase("es/contacto", "Contacto - Casa Espejo")]
     public async Task HasTitleAsync(string url, string title)
     {
         await Page.GotoAsync(url);
@@ -30,6 +32,8 @@ public class OurHouseTests : PageTest
     [TestCase("es", "en", "lang-en")]
     [TestCase("en/ourhouse", "es/nuestracasa", "lang-es")]
     [TestCase("es/nuestracasa", "en/ourhouse", "lang-en")]
+    [TestCase("en/contact", "es/contact", "lang-es")]
+    [TestCase("es/contacto", "en/contact", "lang-en")]
     public async Task ChangesToLangAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);

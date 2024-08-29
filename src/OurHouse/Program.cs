@@ -50,6 +50,8 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/en"),
       new PageResource($"{basePath}/es/nuestracasa"),
       new PageResource($"{basePath}/en/ourhouse"),
+      new PageResource($"{basePath}/es/contacto"),
+      new PageResource($"{basePath}/en/contact"),
       new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
       new CssResource($"{basePath}/OurHouse.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
       new JsResource($"{basePath}/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo")]
@@ -95,6 +97,18 @@ app.MapControllerRoute(
     name: "OurHouse-es",
     pattern: "{lang=es}/nuestracasa",
     defaults: new { lang = "es", controller = "Home", action = "OurHouse" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "Contact-en",
+    pattern: "{lang=en}/contact",
+    defaults: new { lang = "en", controller = "Home", action = "Contact" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "Contact-es",
+    pattern: "{lang=es}/contacto",
+    defaults: new { lang = "es", controller = "Home", action = "Contact" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(

@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using OurHouse.Extensions
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Contact"];
+}
+
+<div class="container pb-3">
+    <div class="text-center">
+        <h1>@Localizer["Contact"]</h1>
+    </div>
+</div>
+
