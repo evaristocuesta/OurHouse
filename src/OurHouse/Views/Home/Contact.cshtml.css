@@ -5,3 +5,14 @@
 p {
     margin: 0;
 }
+
+.google-map {
+    position: relative;
+}
+
+.google-map iframe {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
