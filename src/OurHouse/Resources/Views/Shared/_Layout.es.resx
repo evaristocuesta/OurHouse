@@ -129,4 +129,7 @@
   <data name="Our house" xml:space="preserve">
     <value>Nuestra casa</value>
   </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
 </root>
