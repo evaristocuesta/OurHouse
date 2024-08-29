@@ -7,9 +7,38 @@
     ViewData["Title"] = Localizer["Contact"];
 }
 
-<div class="container pb-3">
-    <div class="text-center">
-        <h1>@Localizer["Contact"]</h1>
+<div class=".contact container pb-3">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 text-center">
+            <h1>@Localizer["Contact"]</h1>
+        </div>
+        <div class="text-center col-sm-12 col-md-6">
+            <p class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Instagram Casa Espejo" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Facebook Casa Espejo" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="social-icon" href="mailto:correo@correo.com" title="Email Casa Espejo">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a class="social-icon" href="tel:+34 666 66 66 66" title="@Localizer["Phone"] Casa Espejo">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </p>
+            <p><a href="tel:+34 666 66 66 66" title="@Localizer["Phone"] Casa Espejo">@Localizer["Phone"]: +34 666 66 66</a></p>
+            <p><a href="mailto:correo@correo.com" title="Email Casa Espejo">Email: correo@correo.com</a></p>
+        </div>
+        <div class="col-sm-12 col-md-6 text-center">
+            <p><a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo</a></p>
+            <p>Calle España nº 10</p>
+            <p>21208 Cortelazor, Huelva</p>
+        </div>
     </div>
+</div>
+
+<div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.6914786648229!2d-6.625618991654754!3d37.93589873161487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1171b41493cf63%3A0xc9a87022388a26a2!2sCalle%20Espa%C3%B1a%2C%2010%2C%2021208%20Cortelazor%2C%20Huelva!5e0!3m2!1ses!2ses!4v1724955833314!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
