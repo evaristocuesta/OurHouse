@@ -7,9 +7,34 @@
     ViewData["Title"] = Localizer["Contact"];
 }
 
-<div class="container pb-3">
-    <div class="text-center">
-        <h1>@Localizer["Contact"]</h1>
+<div class=".contact container pb-3">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 text-center">
+            <h1>@Localizer["Contact"]</h1>
+        </div>
+        <div class="text-center col-sm-12 col-md-6">
+            <p class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Instagram Casa Espejo" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-icon" href="https://www.linkedin.com/in/evaristocuesta/" title="Facebook Casa Espejo" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="social-icon" href="mailto:correo@correo.com" title="Email Casa Espejo">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a class="social-icon" href="tel:+34 666 66 66 66" title="@Localizer["Phone"] Casa Espejo">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </p>
+            <p><a href="tel:+34 666 66 66 66" title="@Localizer["Phone"] Casa Espejo">@Localizer["Phone"]: +34 666 66 66</a></p>
+            <p><a href="mailto:correo@correo.com" title="Email Casa Espejo">Email: correo@correo.com</a></p>
+        </div>
+        <div class="col-sm-12 col-md-6 text-center">
+            <p><a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo</a></p>
+            <p>Calle España nº 10</p>
+            <p>21208 Cortelazor, Huelva</p>
+        </div>
     </div>
 </div>
 
