@@ -14,13 +14,13 @@ html {
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
-    margin-bottom: 60px;
+    margin-bottom: 92px;
     background-color: var(--background-color);
     font-family: Quicksand;
 }
@@ -39,9 +39,9 @@ a {
     color: var(--color-palette-dark-1);
 }
 
-a:hover {
-    color: var(--color-palette-light-1);
-}
+    a:hover {
+        color: var(--color-palette-light-1);
+    }
 
 .social-icons {
     text-align: center;
@@ -124,8 +124,15 @@ a.social-icon:hover {
 }
 
 @media (max-width: 575px) {
-     .border-35 {
+    .border-35 {
         border-width: 25px;
         border-style: solid;
+    }
+}
+
+@media (max-width: 767px) {
+
+    body {
+        margin-bottom: 212px;
     }
 }

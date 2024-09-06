@@ -159,7 +159,7 @@
     .text-1 {
         min-height: 430px;
         padding: 22px 25px 17px;
-        margin: 40px auto 160px;
+        margin: 40px auto;
         width: 450px;
     }
 }
@@ -168,7 +168,7 @@
     .text-1 {
         min-height: 520px;
         padding: 22px 20px 17px;
-        margin: 40px auto 180px;
+        margin: 40px auto;
         width: 320px;
     }
 }
