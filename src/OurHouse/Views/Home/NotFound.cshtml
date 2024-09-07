@@ -10,10 +10,21 @@
 <div class=".contact container pb-3">
     <div class="row">
         <div class="col-sm-12 col-md-12 text-center">
-            <h1>404 - @Localizer["PageNotFound"]</h1>
+            <a class="mountain-not-found" href="@Url.RouteUrlLang("Index", "es")" title="Casa Espejo">
+                <i class="fas fa-mountain"></i>
+            </a>
         </div>
         <div class="text-center col-sm-12 col-md-12">
             <p><a href="@Url.RouteUrlLang("Index", "es")" title="Casa Espejo">Inicio</a> / <a href="@Url.RouteUrlLang("Index", "en")" title="Casa Espejo">Home</a></p>
+        </div>
+        <div class="col-sm-12 col-md-12 text-center">
+            <h1>404 - @Localizer["PageNotFound"]</h1>
+        </div>
+        <div class="text-center col-sm-12 col-md-12">
+            <p>Perharps this page is lost in some corner of Cortelazor</p>
+        </div>
+        <div class="text-center col-sm-12 col-md-12">
+            <p>Quizás esta página está perdida en algún rincón de Cortelazor</p>
         </div>
     </div>
 </div>
