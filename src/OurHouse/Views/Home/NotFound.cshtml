@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using OurHouse.Extensions
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["PageNotFound"];
+}
+
+<div class=".contact container pb-3">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 text-center">
+            <h1>404 - @Localizer["PageNotFound"]</h1>
+        </div>
+        <div class="text-center col-sm-12 col-md-12">
+            <p><a href="@Url.RouteUrlLang("Index", "es")" title="Casa Espejo">Inicio</a> / <a href="@Url.RouteUrlLang("Index", "en")" title="Casa Espejo">Home</a></p>
+        </div>
+    </div>
+</div>
+
