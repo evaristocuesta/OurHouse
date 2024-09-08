@@ -11,3 +11,18 @@
     margin-top: 4.5rem;
     margin-bottom: 0.5rem;
 }
+
+.text-not-found {
+    width: 600px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background-color: var(--color-text-background);
+    padding: 30px 20px 17px;
+}
+
+@media (max-width: 767px) {
+
+    .text-not-found {
+        width: auto;
+    }
+}
