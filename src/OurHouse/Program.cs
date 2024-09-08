@@ -68,6 +68,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseStatusCodePagesWithReExecute("/en/error/{0}");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles(basePath);
 
@@ -113,16 +115,11 @@ app.MapControllerRoute(
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
-    name: "NotFound-en",
-    pattern: "{lang=en}/notfound",
-    defaults: new { lang = "en", controller = "Home", action = "NotFound" },
+    name: "Error",
+pattern: "{lang=en}/error/{statusCode}",
+    defaults: new { lang = "en", controller = "Home", action = "Error", statusCode = 0},
     constraints: new { lang = @"(\w{2})" });
 
-app.MapControllerRoute(
-    name: "NotFound-es",
-    pattern: "{lang=es}/notfound",
-    defaults: new { lang = "es", controller = "Home", action = "NotFound" },
-    constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "default",
