@@ -62,3 +62,17 @@ div.image-1 {
         width: 320px;
     }
 }
+
+
+/* Aseguramos que la imagen se ajuste al tamaño del contenedor */
+/*.article-img {
+    width: 100%;
+    height: auto;
+}*/
+
+/* Alternamos el orden en pantallas grandes */
+@media (min-width: 767px) {
+    .order-lg-reverse {
+        order: 2;
+    }
+}
