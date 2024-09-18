@@ -33,6 +33,12 @@ div.image-1 {
     margin: 30px auto 20px;
 }
 
+@media (max-width: 1199px) {
+    div.image-1 {
+        width: 600px;
+    }
+}
+
 @media (max-width: 991px) {
     .text-1 {
         min-height: 440px;
@@ -53,6 +59,10 @@ div.image-1 {
         padding-left: 30px;
         padding-right: 30px;
         width: 450px;
+    }
+
+    div.image-1 {
+        width: 455px;
     }
 }
 
