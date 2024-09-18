@@ -117,25 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Contact" xml:space="preserve">
-    <value>Contact</value>
+  <data name="Discover Cortelazor" xml:space="preserve">
+    <value>Descubre Cortelazor</value>
   </data>
-  <data name="Developed by" xml:space="preserve">
-    <value>Developed by</value>
+  <data name="Discover Cortelazor Description" xml:space="preserve">
+    <value>Sumérgete en la belleza natural y el encanto rural de Cortelazor, un pintoresco pueblo enclavado en pleno Parque Natural de la Sierra de Aracena y Picos de Aroche. Con sus estrechas calles empedradas, casas encaladas y un ambiente sereno, Cortelazor es el lugar ideal para quienes buscan desconectar y disfrutar de la naturaleza en su estado más puro.
+
+Este pequeño pero encantador rincón de la provincia de Huelva ofrece una experiencia auténtica, donde el tiempo parece detenerse. Pasea por sus alrededores, disfruta de rutas de senderismo que te llevarán a descubrir paisajes impresionantes y maravíllate con la riqueza de su flora y fauna. No olvides detenerte en su iglesia parroquial del siglo XVIII o disfrutar de la exquisita gastronomía local, donde el jamón ibérico y las setas son protagonistas.
+
+Ya sea que busques relajación o aventura, Cortelazor te invita a descubrir un paraíso rural lleno de historia, cultura y paisajes de ensueño.</value>
   </data>
-  <data name="DiscoverCortelazor" xml:space="preserve">
-    <value>Discover Cortelazor</value>
+  <data name="What to do Description" xml:space="preserve">
+    <value>Senderismo en plena naturaleza: Este es uno de los principales atractivos de la zona. Cortelazor cuenta con varios senderos que recorren bosques de encinas, castaños y alcornoques, perfectos para una caminata relajada o rutas más exigentes. Entre los caminos más conocidos se encuentra la Ruta del Charco Malo, donde podrás disfrutar de bellos paisajes naturales y una fauna diversa. También podrás practicar mountain bike o ciclismo de carretera. 
+
+Además, Cortelazor es el sitio ideal si te gustan actividades como avistamientos de aves o fauna en general o la fotografía de paisajes.</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="Languages" xml:space="preserve">
-    <value>Languages</value>
-  </data>
-  <data name="Our house" xml:space="preserve">
-    <value>Our house</value>
-  </data>
-  <data name="Phone" xml:space="preserve">
-    <value>Phone</value>
+  <data name="What to do?" xml:space="preserve">
+    <value>¿Qué hacer?</value>
   </data>
 </root>

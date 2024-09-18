@@ -117,25 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Contact" xml:space="preserve">
-    <value>Contact</value>
-  </data>
-  <data name="Developed by" xml:space="preserve">
-    <value>Developed by</value>
-  </data>
-  <data name="DiscoverCortelazor" xml:space="preserve">
+  <data name="Discover Cortelazor" xml:space="preserve">
     <value>Discover Cortelazor</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Home</value>
+  <data name="Discover Cortelazor Description" xml:space="preserve">
+    <value>Immerse yourself in the natural beauty and rural charm of Cortelazor, a picturesque village nestled in the heart of the Sierra de Aracena and Picos de Aroche Natural Park. With its narrow cobbled streets, whitewashed houses, and serene atmosphere, Cortelazor is the perfect place for those seeking to disconnect and enjoy nature in its purest form.
+
+This small yet charming corner of Huelva province offers an authentic experience where time seems to stand still. Stroll through its surroundings, enjoy hiking trails that lead to breathtaking landscapes, and marvel at the rich flora and fauna. Don’t forget to stop by its 18th-century parish church or savor the exquisite local cuisine, where Iberian ham and mushrooms take center stage.
+
+Whether you're looking for relaxation or adventure, Cortelazor invites you to discover a rural paradise full of history, culture, and dreamlike landscapes.</value>
   </data>
-  <data name="Languages" xml:space="preserve">
-    <value>Languages</value>
+  <data name="What to do Description" xml:space="preserve">
+    <value>Hiking in nature: This is one of the main attractions of the area. Cortelazor offers several trails that wind through forests of holm oaks, chestnut trees, and cork oaks, perfect for a relaxed walk or more challenging routes. Among the most well-known paths is the Ruta del Charco Malo, where you can enjoy beautiful natural landscapes and diverse wildlife. You can also practice mountain biking or road cycling.
+
+Additionally, Cortelazor is the ideal spot if you enjoy activities like birdwatching, wildlife spotting, or landscape photography.</value>
   </data>
-  <data name="Our house" xml:space="preserve">
-    <value>Our house</value>
-  </data>
-  <data name="Phone" xml:space="preserve">
-    <value>Phone</value>
+  <data name="What to do?" xml:space="preserve">
+    <value>What to do?</value>
   </data>
 </root>

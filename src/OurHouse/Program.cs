@@ -48,10 +48,12 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/"),
       new PageResource($"{basePath}/es"),
       new PageResource($"{basePath}/en"),
-      new PageResource($"{basePath}/es/nuestracasa"),
-      new PageResource($"{basePath}/en/ourhouse"),
+      new PageResource($"{basePath}/es/nuestra-casa"),
+      new PageResource($"{basePath}/en/our-house"),
       new PageResource($"{basePath}/es/contacto"),
       new PageResource($"{basePath}/en/contact"),
+      new PageResource($"{basePath}/es/discover-cortelazor"),
+      new PageResource($"{basePath}/en/discover-cortelazor"),
       new PageResource($"{basePath}/en/error/404") { OutFile = $"{basePath}/404.html"},
       new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
       new CssResource($"{basePath}/OurHouse.styles.css?v=QVIm3G0TQnz7jhf0QoO7Vxi4Cck3I2ZBcZUJUpvQ19o"),
@@ -92,13 +94,13 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "OurHouse-en",
-    pattern: "{lang=en}/ourhouse",
+    pattern: "{lang=en}/our-house",
     defaults: new { lang = "en", controller = "Home", action = "OurHouse"},
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(
     name: "OurHouse-es",
-    pattern: "{lang=es}/nuestracasa",
+    pattern: "{lang=es}/nuestra-casa",
     defaults: new { lang = "es", controller = "Home", action = "OurHouse" },
     constraints: new { lang = @"(\w{2})" });
 
@@ -112,6 +114,18 @@ app.MapControllerRoute(
     name: "Contact-es",
     pattern: "{lang=es}/contacto",
     defaults: new { lang = "es", controller = "Home", action = "Contact" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "DiscoverCortelazor-en",
+    pattern: "{lang=en}/discover-cortelazor",
+    defaults: new { lang = "en", controller = "Home", action = "DiscoverCortelazor" },
+    constraints: new { lang = @"(\w{2})" });
+
+app.MapControllerRoute(
+    name: "DiscoverCortelazor-es",
+    pattern: "{lang=es}/descubre-cortelazor",
+    defaults: new { lang = "es", controller = "Home", action = "DiscoverCortelazor" },
     constraints: new { lang = @"(\w{2})" });
 
 app.MapControllerRoute(

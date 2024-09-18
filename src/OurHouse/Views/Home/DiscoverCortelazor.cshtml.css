@@ -1,0 +1,118 @@
+﻿.row div {
+    border-radius: 30px;
+    background-color: var(--color-text-background);
+}
+
+.text-1 {
+    min-height: 450px;
+    width: 600px;
+    margin: 30px auto 20px;
+    padding: 30px 40px 17px;
+}
+
+.text-2 {
+    min-height: 450px;
+    width: 600px;
+    margin: 30px auto 20px;
+    padding: 30px 40px 17px;
+}
+
+.text-3 {
+    min-height: 450px;
+    width: 600px;
+    margin: 30px auto 20px;
+    padding: 30px 40px 17px;
+}
+
+div.image-1 {
+    width: 455px;
+    height: 455px;
+    background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/26c866473ef45250842f6d9d/bn.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    margin: 30px auto 20px;
+}
+
+@media (max-width: 1199px) {
+    div.image-1 {
+        width: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    .text-1 {
+        min-height: 440px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 450px;
+    }
+
+    .text-2 {
+        min-height: 440px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 450px;
+    }
+
+    .text-3 {
+        min-height: 440px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 450px;
+    }
+
+    div.image-1 {
+        width: 455px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-1 {
+        min-height: 400px;
+        padding: 22px 25px 10px;
+        width: 450px;
+    }
+
+    .text-2 {
+        min-height: 400px;
+        padding: 22px 25px 10px;
+        width: 450px;
+    }
+
+    .text-3 {
+        min-height: 400px;
+        padding: 22px 25px 10px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-1 {
+        min-height: 520px;
+        padding: 22px 20px 17px;
+        width: 320px;
+    }
+
+    .text-2 {
+        min-height: 520px;
+        padding: 22px 20px 17px;
+        width: 320px;
+    }
+
+    .text-3 {
+        min-height: 520px;
+        padding: 22px 20px 17px;
+        width: 320px;
+    }
+
+    div.image-1 {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (min-width: 991px) {
+    .order-lg-reverse {
+        order: 2;
+    }
+}
