@@ -51,9 +51,13 @@ a {
     color: var(--color-palette-dark-1);
 }
 
-    a:hover {
-        color: var(--color-palette-light-1);
-    }
+a:hover {
+    color: var(--color-palette-light-1);
+}
+
+ul {
+    list-style-type: none;
+}
 
 .social-icons {
     text-align: center;
