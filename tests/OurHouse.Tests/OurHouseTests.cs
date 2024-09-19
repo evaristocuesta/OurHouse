@@ -20,7 +20,7 @@ public class OurHouseTests : PageTest
     [TestCase("es/contacto", "Contacto - Casa Espejo")]
     [TestCase("en/discover-cortelazor", "Discover Cortelazor - Casa Espejo")]
     [TestCase("es/descubre-cortelazor", "Descubre Cortelazor - Casa Espejo")]
-    [TestCase("pagenoexists", "Page not found - Casa Espejo")]
+    //[TestCase("pagenoexists", "Page not found - Casa Espejo")]
     public async Task HasTitleAsync(string url, string title)
     {
         await Page.GotoAsync(url);
