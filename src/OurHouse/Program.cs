@@ -52,7 +52,7 @@ builder.Services.AddSingleton<IStaticResourcesInfoProvider>(
       new PageResource($"{basePath}/en/our-house"),
       new PageResource($"{basePath}/es/contacto"),
       new PageResource($"{basePath}/en/contact"),
-      new PageResource($"{basePath}/es/discover-cortelazor"),
+      new PageResource($"{basePath}/es/descubre-cortelazor"),
       new PageResource($"{basePath}/en/discover-cortelazor"),
       new PageResource($"{basePath}/en/error/404") { OutFile = $"{basePath}/404.html"},
       new CssResource($"{basePath}/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0"),
