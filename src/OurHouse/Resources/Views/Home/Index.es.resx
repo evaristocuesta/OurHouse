@@ -127,6 +127,6 @@
     <value>Bienvenido</value>
   </data>
   <data name="Welcome message" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales turpis porta, varius libero a, dapibus metus. Maecenas porta feugiat eros malesuada hendrerit. Praesent at libero sed nisi efficitur accumsan a sit amet leo. Vivamus et euismod sapien, semper mollis eros. In leo ante, dictum id nibh sed, lobortis ultricies neque. Donec ac volutpat urna. Fusce id ullamcorper justo, at facilisis felis. Sed at feugiat neque. Pellentesque tempor hendrerit vestibulum.</value>
+    <value>&lt;b&gt;Casa Espejo&lt;/b&gt; es una encantadora casa rural ubicada en el pintoresco pueblo de &lt;b&gt;Cortelazor la Real&lt;/b&gt;, en pleno corazón de la &lt;b&gt;Sierra de Aracena&lt;/b&gt;. Este acogedor alojamiento combina el encanto rústico con todas las comodidades modernas, ofreciendo un entorno ideal para desconectar y disfrutar de la naturaleza. Rodeada de paisajes impresionantes, &lt;b&gt;Casa Espejo&lt;/b&gt; es el lugar perfecto para relajarse, practicar senderismo y descubrir la rica gastronomía y cultura de la región.</value>
   </data>
 </root>
