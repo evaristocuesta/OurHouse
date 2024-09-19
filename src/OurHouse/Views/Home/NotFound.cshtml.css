@@ -1,13 +1,7 @@
-﻿a.mountain-not-found {
+﻿a.fox-not-found {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 11rem;
-    width: 11rem;
-    background-color: var(--color-palette-dark-1);
-    color: var(--color-palette-light-2);
-    border-radius: 100%;
-    font-size: 6.5rem;
     margin-top: 4.5rem;
     margin-bottom: 0.5rem;
 }

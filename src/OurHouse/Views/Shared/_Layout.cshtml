@@ -22,7 +22,10 @@
     <header>
         <nav class="navbar bg-body-tertiary navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">casa espejo</a>
+                <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
+                    <img src="fox.svg" width="45" height="45"/>
+                    <span>casa espejo</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -72,9 +75,9 @@
         <div class="container text-center">
             <div class="row">
                 <div class="footer-top col-sm-12">
-                    <p class="logo">
+                    <p>
                         <a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
-                            <i class="fas fa-paw"></i>
+                            <img src="fox.svg" width="50" height="50" />
                         </a>
                     </p>
                 </div>
@@ -86,9 +89,9 @@
                 </div>
 
                 <div class="footer-center col-sm-12 col-md-4">
-                    <p class="logo">
+                    <p>
                         <a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
-                            <i class="fas fa-paw"></i>
+                            <img src="fox.svg" width="50" height="50" />
                         </a>
                     </p>
                     <p><a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo &copy; 2024</a></p>
