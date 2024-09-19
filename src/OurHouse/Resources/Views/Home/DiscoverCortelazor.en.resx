@@ -133,4 +133,19 @@
   <data name="What to do?" xml:space="preserve">
     <value>What to do?</value>
   </data>
+  <data name="Where to eat Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;Cortelazor la Real&lt;/b&gt; offers a rich &lt;b&gt;gastronomy&lt;/b&gt; that reflects the best of the Sierra de Huelva. The most typical dishes include Iberian pork products, especially &lt;b&gt;ham, chorizo, and salchichón&lt;/b&gt;, all traditionally made. &lt;b&gt;Game meats&lt;/b&gt;, such as venison and wild boar, are also popular, often served with stews or local mushrooms.&lt;/p&gt;
+
+&lt;p&gt;To enjoy the local cuisine, you can eat at the following places:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Mesón El Matadero&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Mesón Los Madroños&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Bar La Plaza&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Bar El Maño&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Where to eat?" xml:space="preserve">
+    <value>Where to eat?</value>
+  </data>
 </root>

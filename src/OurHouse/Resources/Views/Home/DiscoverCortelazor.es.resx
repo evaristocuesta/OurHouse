@@ -133,4 +133,19 @@
   <data name="What to do?" xml:space="preserve">
     <value>¿Qué hacer?</value>
   </data>
+  <data name="Where to eat Description" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;Cortelazor la Real&lt;/b&gt; ofrece una rica &lt;b&gt;gastronomía&lt;/b&gt; que refleja lo mejor de la Sierra de Huelva. Los platos más típicos incluyen embutidos ibéricos de cerdo, especialmente el &lt;b&gt;jamón, chorizo y salchichón&lt;/b&gt;, elaborados de manera tradicional. También son populares las &lt;b&gt;carnes de caza&lt;/b&gt;, como el venado y el jabalí, acompañadas de guisos o setas locales.&lt;/p&gt;
+
+&lt;p&gt;Para disfrutar de la gastronomía local, puedes comer en los siguientes lugares:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Mesón El Matadero&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Mesón Los Madroños&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Bar La Plaza&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Bar El Maño&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Where to eat?" xml:space="preserve">
+    <value>¿Dónde comer?</value>
+  </data>
 </root>
