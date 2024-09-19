@@ -14,10 +14,12 @@ public class OurHouseTests : PageTest
     [TestCase("", "Welcome - Casa Espejo")]
     [TestCase("en", "Welcome - Casa Espejo")]
     [TestCase("es", "Bienvenido - Casa Espejo")]
-    [TestCase("en/ourhouse", "Our house - Casa Espejo")]
-    [TestCase("es/nuestracasa", "Nuestra casa - Casa Espejo")]
+    [TestCase("en/our-house", "Our house - Casa Espejo")]
+    [TestCase("es/nuestra-casa", "Nuestra casa - Casa Espejo")]
     [TestCase("en/contact", "Contact - Casa Espejo")]
     [TestCase("es/contacto", "Contacto - Casa Espejo")]
+    [TestCase("en/discover-cortelazor", "Discover Cortelazor - Casa Espejo")]
+    [TestCase("es/descubre-cortelazor", "Descubre Cortelazor - Casa Espejo")]
     [TestCase("pagenoexists", "Page not found - Casa Espejo")]
     public async Task HasTitleAsync(string url, string title)
     {
@@ -31,10 +33,12 @@ public class OurHouseTests : PageTest
     [TestCase("", "es", "lang-es")]
     [TestCase("en", "es", "lang-es")]
     [TestCase("es", "en", "lang-en")]
-    [TestCase("en/ourhouse", "es/nuestracasa", "lang-es")]
-    [TestCase("es/nuestracasa", "en/ourhouse", "lang-en")]
+    [TestCase("en/our-house", "es/nuestra-casa", "lang-es")]
+    [TestCase("es/nuestra-casa", "en/our-house", "lang-en")]
     [TestCase("en/contact", "es/contacto", "lang-es")]
     [TestCase("es/contacto", "en/contact", "lang-en")]
+    [TestCase("en/discover-cortelazor", "es/descubre-cortelazor", "lang-es")]
+    [TestCase("es/descubre-cortelazor", "en/discover-cortelazor", "lang-en")]
     public async Task ChangesToLangAsync(string origin, string target, string lang)
     {
         await Page.GotoAsync(origin);
