@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace OurHouse.Extensions;
 
@@ -12,6 +13,19 @@ public static class UrlExtensions
         }
 
         string? url = urlHelper.RouteUrl($"{routeName}-{languaje}", new { lang = languaje });
+        return url;
+    }
+
+    public static string RouteUrlLang(this IUrlHelper urlHelper, string? routeName, ViewContext viewContext)
+    {
+        var lang = viewContext.RouteData.Values["lang"]?.ToString();
+        var url = RouteUrlLang(urlHelper, routeName, lang);
+
+        if (string.IsNullOrEmpty(url))
+        {
+            return string.Empty;
+        }
+
         return url;
     }
 }

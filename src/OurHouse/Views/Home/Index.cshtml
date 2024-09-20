@@ -14,8 +14,14 @@
 
     <div class="text-1 text-center">
         <h1>@Localizer["Welcome"]</h1>
-        <p class="text-margin">@Localizer["Welcome message"]</p>
-        <a href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())" class="custom-buttom">@Localizer["Our house"]</a>
+        <p class="text-margin">
+            @Localizer["Welcome message OurHouse {0} DiscoverCortelazor {1}", new object[] 
+            {
+                Url.RouteUrlLang("OurHouse", ViewContext),
+                Url.RouteUrlLang("DiscoverCortelazor", ViewContext)
+            }]
+        </p>
+        <a href="@Url.RouteUrlLang("OurHouse", ViewContext)" class="custom-buttom">@Localizer["Our house"]</a>
     </div>
 </div>
 
