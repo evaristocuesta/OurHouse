@@ -23,8 +23,8 @@
     <header>
         <nav class="navbar bg-body-tertiary navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
-                    <img class="logo-navbar" src="~/fox.svg" />
+                <a class="navbar-brand" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())" title="@Localizer["Rural house in Cortelazor"]">
+                    <img class="logo-navbar" src="~/fox.svg" alt="@Localizer["Rural house in Cortelazor"]" />
                     <span>casa espejo</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -38,27 +38,27 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Home"]</a>
+                                <a class="nav-link" href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())" title="@Localizer["Rural house in Cortelazor"]">@Localizer["Home"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Our house"]</a>
+                                <a class="nav-link" href="@Url.RouteUrlLang("OurHouse", ViewContext.RouteData.Values["lang"]?.ToString())" title="@Localizer["Rural house in Sierra de Aracena"]">@Localizer["Our house"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="@Url.RouteUrlLang("DiscoverCortelazor", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["DiscoverCortelazor"]</a>
+                                <a class="nav-link" href="@Url.RouteUrlLang("DiscoverCortelazor", ViewContext.RouteData.Values["lang"]?.ToString())" title="@Localizer["DiscoverCortelazor"]">@Localizer["DiscoverCortelazor"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="@Url.RouteUrlLang("Contact", ViewContext.RouteData.Values["lang"]?.ToString())">@Localizer["Contact"]</a>
+                                <a class="nav-link" href="@Url.RouteUrlLang("Contact", ViewContext.RouteData.Values["lang"]?.ToString())" title="@Localizer["Contact"]">@Localizer["Contact"]</a>
                             </li>
                         </ul>
                         <hr />
                         <div>
                             @Localizer["Languages"]:
                             <a id="lang-es"
-                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")">
+                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")" title="Español">
                                 Español
                             </a> -
                             <a id="lang-en"
-                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")">
+                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")" title="English">
                                 English
                             </a>
                         </div>
@@ -77,14 +77,14 @@
             <div class="row align-items-center">
                 <div class="footer-top col-sm-12 col-md-4 order-md-2">
                     <p>
-                        <a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">
-                            <img class="logo-footer" src="~/fox.svg" />
+                        <a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())" title="@Localizer["Rural house in Sierra de Aracena"]">
+                            <img class="logo-footer" src="~/fox.svg" alt="@Localizer["Rural house in Sierra de Aracena"]" />
                         </a>
                     </p>
                 </div>
 
                 <div class="footer-left col-sm-12 col-md-4 order-md-1">
-                    <p><a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())">Casa Espejo</a></p>
+                    <p><a href="@Url.RouteUrlLang("Index", ViewContext.RouteData.Values["lang"]?.ToString())" title="@Localizer["Rural house in Sierra de Aracena"]">Casa Espejo</a></p>
                     <p>Calle España nº 10</p>
                     <p>21208 Cortelazor, Huelva</p>
                 </div>
@@ -100,11 +100,11 @@
                         <a class="social-icon" href="mailto:correo@correo.com" title="Email Casa Espejo">
                             <i class="far fa-envelope"></i>
                         </a>
-                        <a class="social-icon" href="tel:+34 666 66 66 66" title="@Localizer["Phone"] Casa Espejo">
+                        <a class="social-icon" href="tel:+34666666666" title="@Localizer["Phone"] Casa Espejo">
                             <i class="fas fa-phone"></i>
                         </a>
                     </p>
-                    <p>@Localizer["Developed by"] <a href="https://www.evaristocuesta.com" target="_blank">Evaristo Cuesta</a></p>
+                    <p>@Localizer["Developed by"] <a href="https://www.evaristocuesta.com" target="_blank" title="Evaristo Cuesta sofware developer">Evaristo Cuesta</a></p>
                 </div>
             </div>
         </div>
