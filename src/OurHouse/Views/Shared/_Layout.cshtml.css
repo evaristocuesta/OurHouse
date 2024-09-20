@@ -54,19 +54,7 @@ for details on configuring this project to bundle and minify static web assets. 
     color: var(--color-palette-dark-1);
 }
 
-.footer-top {
-    display: none;
-}
-
 @media (max-width: 767px) {
-
-    .footer-top {
-        display: block;
-    }
-
-    .footer-center {
-        display: none;
-    }
 
     a .social-icon {
         margin-bottom: 0rem;
