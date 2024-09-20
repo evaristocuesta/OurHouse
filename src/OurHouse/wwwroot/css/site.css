@@ -144,7 +144,7 @@ a.social-icon:hover {
 }
 
 .logo-footer {
-    width: 50px;
+    width: 65px;
 }
 
 @media (max-width: 575px) {
@@ -157,6 +157,6 @@ a.social-icon:hover {
 @media (max-width: 767px) {
 
     body {
-        margin-bottom: 212px;
+        margin-bottom: 229px;
     }
 }
