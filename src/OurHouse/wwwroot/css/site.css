@@ -139,6 +139,14 @@ a.social-icon:hover {
     color: var(--color-text-button);
 }
 
+.logo-navbar {
+    width: 45px;
+}
+
+.logo-footer {
+    width: 65px;
+}
+
 @media (max-width: 575px) {
     .border-35 {
         border-width: 25px;
@@ -149,6 +157,6 @@ a.social-icon:hover {
 @media (max-width: 767px) {
 
     body {
-        margin-bottom: 212px;
+        margin-bottom: 229px;
     }
 }

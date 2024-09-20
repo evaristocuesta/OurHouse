@@ -1,9 +1,9 @@
-﻿a.fox-not-found {
+﻿.fox-not-found ::deep img {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 350px;
 }
 
 .text-not-found {
@@ -18,5 +18,12 @@
 
     .text-not-found {
         width: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .fox-not-found ::deep img {
+        width: 80%;
+        max-width: 300px;
     }
 }
