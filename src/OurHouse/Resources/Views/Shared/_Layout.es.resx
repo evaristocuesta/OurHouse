@@ -138,4 +138,10 @@
   <data name="Phone" xml:space="preserve">
     <value>Teléfono</value>
   </data>
+  <data name="Rural house in Cortelazor" xml:space="preserve">
+    <value>Casa rural en Cortelazor</value>
+  </data>
+  <data name="Rural house in Sierra de Aracena" xml:space="preserve">
+    <value>Casa rural en Sierra de Aracena</value>
+  </data>
 </root>
