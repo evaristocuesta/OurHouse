@@ -11,16 +11,16 @@ public class OurHouseTests : PageTest
     private string _baseUrl = string.Empty;
 
     [Test]
-    [TestCase("", "Welcome - Casa Espejo")]
-    [TestCase("en", "Welcome - Casa Espejo")]
-    [TestCase("es", "Bienvenido - Casa Espejo")]
-    [TestCase("en/our-house", "Our house - Casa Espejo")]
-    [TestCase("es/nuestra-casa", "Nuestra casa - Casa Espejo")]
-    [TestCase("en/contact", "Contact - Casa Espejo")]
-    [TestCase("es/contacto", "Contacto - Casa Espejo")]
-    [TestCase("en/discover-cortelazor", "Discover Cortelazor - Casa Espejo")]
-    [TestCase("es/descubre-cortelazor", "Descubre Cortelazor - Casa Espejo")]
-    //[TestCase("pagenoexists", "Page not found - Casa Espejo")]
+    [TestCase("", "Welcome - La Casita del Zorro")]
+    [TestCase("en", "Welcome - La Casita del Zorro")]
+    [TestCase("es", "Bienvenido - La Casita del Zorro")]
+    [TestCase("en/our-house", "Our house - La Casita del Zorro")]
+    [TestCase("es/nuestra-casa", "Nuestra casa - La Casita del Zorro")]
+    [TestCase("en/contact", "Contact - La Casita del Zorro")]
+    [TestCase("es/contacto", "Contacto - La Casita del Zorro")]
+    [TestCase("en/discover-cortelazor", "Discover Cortelazor - La Casita del Zorro")]
+    [TestCase("es/descubre-cortelazor", "Descubre Cortelazor - La Casita del Zorro")]
+    //[TestCase("pagenoexists", "Page not found - La Casita del Zorro")]
     public async Task HasTitleAsync(string url, string title)
     {
         await Page.GotoAsync(url);
