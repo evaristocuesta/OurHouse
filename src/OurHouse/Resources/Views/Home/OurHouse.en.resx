@@ -117,12 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Amenities" xml:space="preserve">
+    <value>Amenities</value>
+  </data>
+  <data name="Amenities Description" xml:space="preserve">
+    <value>&lt;p&gt;The house is fully equipped to ensure you have everything you need during your stay. It offers internet with WiFi, a Smart TV to enjoy your favorite shows and movies, a hair dryer, toaster, microwave, and washing machine.&lt;/p&gt;
+&lt;p&gt;For your comfort, there’s a pellet stove to create a cozy atmosphere on cooler nights, air conditioning for the summer, and ceiling fans in the bedrooms to keep the space fresh and comfortable.&lt;/p&gt;</value>
+  </data>
+  <data name="Other Highlights" xml:space="preserve">
+    <value>Other Highlights</value>
+  </data>
+  <data name="Other Highlights Description" xml:space="preserve">
+    <value>&lt;p&gt;Located in the charming village of Cortelazor, with fewer than 300 inhabitants, the house offers an authentic experience of rural tranquility. It’s situated next to the village's main square, where you can enjoy the local bars and the peaceful life this corner of the sierra provides.&lt;/p&gt;
+&lt;p&gt;Additionally, Cortelazor is the starting point for several hiking trails that traverse the Sierra de Aracena, offering the chance to explore the area’s unique natural landscapes.&lt;/p&gt;</value>
+  </data>
   <data name="Our house" xml:space="preserve">
     <value>Our house</value>
   </data>
-  <data name="Our house message" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu sem vehicula efficitur. Sed non molestie dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis auctor augue et tincidunt sagittis. Nullam quis tortor rhoncus, consectetur quam mattis, ultrices risus. Sed faucibus libero sit amet mollis pellentesque. Etiam dignissim justo ut dictum eleifend. Nam nec nisl mi. Integer tempus quam a nulla cursus vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna consectetur, varius turpis nec, egestas libero. Aenean nec efficitur enim, sed lacinia enim. Nulla at ante tortor. Proin malesuada nisl a est finibus ullamcorper. Nullam nec odio quis nulla pretium fermentum eget in nisl.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu sem vehicula efficitur. Sed non molestie dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis auctor augue et tincidunt sagittis. Nullam quis tortor rhoncus, consectetur quam mattis, ultrices risus. Sed faucibus libero sit amet mollis pellentesque. Etiam dignissim justo ut dictum eleifend. Nam nec nisl mi. Integer tempus quam a nulla cursus vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna consectetur, varius turpis nec, egestas libero. Aenean nec efficitur enim, sed lacinia enim. Nulla at ante tortor. Proin malesuada nisl a est finibus ullamcorper. Nullam nec odio quis nulla pretium fermentum eget in nisl.</value>
+  <data name="The Space" xml:space="preserve">
+    <value>The Space</value>
+  </data>
+  <data name="The Space Description" xml:space="preserve">
+    <value>&lt;p&gt;Our cozy rural house in Cortelazor, in the heart of the Sierra de Aracena, is the perfect retreat to disconnect and enjoy tranquility.&lt;/p&gt;
+&lt;p&gt;On the ground floor, you'll find an open space that integrates the living room, dining area, and kitchen—ideal for spending time with family or friends. There's also a guest toilet for added convenience. The kitchen leads directly to a charming private patio, where you can relax in the partially covered chill-out area, perfect for unwinding outdoors at any time of the year.&lt;/p&gt;
+&lt;p&gt;On the second floor, there are two bedrooms: one with a double bed and the other with two single beds, as well as a full bathroom, offering the comfort and privacy needed for a pleasant stay.&lt;/p&gt;</value>
   </data>
 </root>

@@ -117,12 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Amenities" xml:space="preserve">
+    <value>Servicios</value>
+  </data>
+  <data name="Amenities Description" xml:space="preserve">
+    <value>&lt;p&gt;La casa está completamente equipada para que no te falte de nada durante tu estancia. Dispone de internet con WiFi, televisión con Smart TV para disfrutar de tus series y películas favoritas, secador de pelo, tostadora, microondas y lavadora.&lt;/p&gt;
+&lt;p&gt;Para tu confort, cuenta con una chimenea de pellets que crea un ambiente cálido en las noches más frescas, aire acondicionado en verano y ventiladores de techo en las habitaciones para mantener un ambiente fresco y agradable.&lt;/p&gt;</value>
+  </data>
+  <data name="Other Highlights" xml:space="preserve">
+    <value>Otros aspectos destacables</value>
+  </data>
+  <data name="Other Highlights Description" xml:space="preserve">
+    <value>&lt;p&gt;Ubicada en el encantador pueblo de Cortelazor, con menos de 300 habitantes, la casa ofrece una experiencia auténtica de tranquilidad rural. Está situada al lado de la plaza principal del pueblo, donde podrás disfrutar de los bares locales y de la vida tranquila que ofrece este rincón de la sierra.&lt;/p&gt;
+&lt;p&gt;Además, Cortelazor es el punto de partida de varios senderos que recorren la Sierra de Aracena, ofreciendo la oportunidad de explorar la naturaleza y los paisajes únicos de la zona.&lt;/p&gt;</value>
+  </data>
   <data name="Our house" xml:space="preserve">
     <value>Nuestra casa</value>
   </data>
-  <data name="Our house message" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu sem vehicula efficitur. Sed non molestie dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis auctor augue et tincidunt sagittis. Nullam quis tortor rhoncus, consectetur quam mattis, ultrices risus. Sed faucibus libero sit amet mollis pellentesque. Etiam dignissim justo ut dictum eleifend. Nam nec nisl mi. Integer tempus quam a nulla cursus vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna consectetur, varius turpis nec, egestas libero. Aenean nec efficitur enim, sed lacinia enim. Nulla at ante tortor. Proin malesuada nisl a est finibus ullamcorper. Nullam nec odio quis nulla pretium fermentum eget in nisl.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae urna eu sem vehicula efficitur. Sed non molestie dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis auctor augue et tincidunt sagittis. Nullam quis tortor rhoncus, consectetur quam mattis, ultrices risus. Sed faucibus libero sit amet mollis pellentesque. Etiam dignissim justo ut dictum eleifend. Nam nec nisl mi. Integer tempus quam a nulla cursus vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in magna consectetur, varius turpis nec, egestas libero. Aenean nec efficitur enim, sed lacinia enim. Nulla at ante tortor. Proin malesuada nisl a est finibus ullamcorper. Nullam nec odio quis nulla pretium fermentum eget in nisl.</value>
+  <data name="The Space" xml:space="preserve">
+    <value>El Espacio</value>
+  </data>
+  <data name="The Space Description" xml:space="preserve">
+    <value>&lt;p&gt;Nuestra acogedora casa rural en Cortelazor, en plena Sierra de Aracena, es el refugio perfecto para desconectar y disfrutar de la tranquilidad.&lt;/p&gt;
+&lt;p&gt;En la planta baja, encontrarás un espacio diáfano que integra el salón, el comedor y la cocina, ideal para compartir momentos en familia o con amigos. Además, cuenta con un cuarto de aseo para mayor comodidad. La cocina tiene acceso directo a un encantador patio privado, donde podrás relajarte en la zona chill out, parcialmente cubierta, perfecta para descansar al aire libre en cualquier época del año.&lt;/p&gt;
+&lt;p&gt;En la segunda planta, dispones de dos dormitorios: uno con una cama doble y el otro con dos camas individuales, además de un cuarto de baño completo, ofreciendo el confort y privacidad necesarios para una estancia agradable.&lt;/p&gt;</value>
   </data>
 </root>
