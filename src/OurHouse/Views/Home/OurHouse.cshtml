@@ -6,7 +6,89 @@
     ViewData["Title"] = @Localizer["Our house"];
 }
 
-<div class="swiper mySwiper">
+<div class="modal fade" id="modalGallery" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Localizer["Gallery"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="@Localizer["Close"]"></button>
+            </div>
+            <div class="modal-body">
+                <div class="swiper slideSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza05.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza16.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza17.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza28.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza13.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza25.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza23.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza12.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza10.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="swiper thumbsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza05.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza16.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza17.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza28.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza13.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza25.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza23.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza12.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza10.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="swiper mainSwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <img src="https://www.evaristocuesta.es/fotos-paisajes-naturaleza/paisajesnaturaleza05.jpg" />
