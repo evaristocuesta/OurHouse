@@ -184,7 +184,7 @@ a.social-icon:hover {
     height: 250px;
 }
 
-.swiper-slide img {
+.swiper-slide a img {
     display: block;
     height: 250px;
     object-fit: cover;
