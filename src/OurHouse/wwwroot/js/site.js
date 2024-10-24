@@ -1,6 +1,8 @@
 ﻿import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js';
 
-window.onload = (event) => {
+window.addEventListener("load",  (event) => {
+
+    console.log("inicia swiper");
 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
@@ -26,4 +28,4 @@ window.onload = (event) => {
     });
 
     lightbox.init();
-};
+});
