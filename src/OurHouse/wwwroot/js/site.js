@@ -2,8 +2,6 @@
 
 window.addEventListener("load",  (event) => {
 
-    console.log("inicia swiper");
-
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         spaceBetween: 10,
