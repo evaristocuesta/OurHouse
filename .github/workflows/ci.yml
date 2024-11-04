@@ -29,8 +29,8 @@ jobs:
       run: dotnet run --no-restore --configuration Release ssg ../../web
       working-directory: ./src/OurHouse
 
-    - name: Serve Files
-      uses: Eun/http-server-action@v1
+    - name: HTTP Server Action
+      uses: Eun/http-server-action@v1.0.12
       with:
         directory: "web"
         port: 8080
@@ -39,6 +39,7 @@ jobs:
           ["index.html"]
         log: "log.txt"
         logTime: "false"
+        custom404Page: "/404.html"
 
 
     - name: Restore tests dependencies
