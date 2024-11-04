@@ -20,7 +20,7 @@ public class OurHouseTests : PageTest
     [TestCase("es/contacto", "Contacto - La Casita del Zorro")]
     [TestCase("en/discover-cortelazor", "Discover Cortelazor - La Casita del Zorro")]
     [TestCase("es/descubre-cortelazor", "Descubre Cortelazor - La Casita del Zorro")]
-    //[TestCase("pagenoexists", "Page not found - La Casita del Zorro")]
+    [TestCase("pagenoexists", "Page not found - La Casita del Zorro")]
     public async Task HasTitleAsync(string url, string title)
     {
         await Page.GotoAsync(url);
