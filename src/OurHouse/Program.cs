@@ -75,7 +75,7 @@ if (!app.Environment.IsDevelopment())
 app.UseStatusCodePagesWithReExecute("/en/error/{0}");
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(basePath);
+app.MapStaticAssets();
 
 app.UsePathBase(basePath);
 app.UseRouting();
