@@ -22,7 +22,7 @@ html {
 body {
     margin-bottom: 92px;
     background-color: var(--background-color);
-    font-family: Quicksand;
+    font-family: Quicksand, sans-serif;
 }
 
 h1 {
@@ -51,9 +51,13 @@ a {
     color: var(--color-palette-dark-1);
 }
 
-    a:hover {
-        color: var(--color-palette-light-1);
-    }
+a:hover {
+    color: var(--color-palette-light-1);
+}
+
+.dropdown-item.active {
+    background-color: var(--color-palette-dark-1);
+}
 
 ul {
     list-style-type: none;
