@@ -72,17 +72,7 @@
                             </li>
                         </ul>
                         <hr />
-                        <div>
-                            @Localizer["Languages"]:
-                            <a id="lang-es"
-                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "es")" title="Español">
-                                Español
-                            </a> -
-                            <a id="lang-en"
-                               href="@Url.RouteUrlLang(ViewContext.RouteData.Values["action"]?.ToString(), "en")" title="English">
-                                English
-                            </a>
-                        </div>
+                        @await Html.PartialAsync("_LanguagesCombo")
                     </div>
                 </div>
             </div>
