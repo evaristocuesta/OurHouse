@@ -44,6 +44,7 @@ public class OurHouseTests : PageTest
         await Page.GotoAsync(origin);
 
         await Page.GetByLabel("Toggle navigation").ClickAsync();
+        await Page.Locator("id=languages").ClickAsync();
         await Page.Locator($"id={lang}").ClickAsync();
 
         // Expect a url
